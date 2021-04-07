@@ -93,10 +93,16 @@ div.s_minicourse {
     background: url(assets/ng2/S_MINICURSOS.png)
 }
 
+div.s_fasttrack {
+    height: 40px;
+    width: 100%;
+    background: url(assets/ng2/div_fasttrack.png)
+}
+
 div.s_roundtable {
     height: 40px;
     width: 100%;
-    background: url(assets/ng2/S_MESAS_REDONDAS.png)
+    background: url(assets/ng2/div_mesas_redondas.png)
 }
 
 div.s_basesite {
@@ -781,6 +787,11 @@ section.support {
               width: 100%;
               height: 23px;
             }
+            .organizacao-header{
+              background:url(assets/ng2/div_organizacao.png);
+              width: 100%;
+              height: 23px;
+            }
             .apoio-header{
               background:url(assets/ng2/div_apoio.png);
               width: 139%;
@@ -1011,7 +1022,7 @@ footer {
         }
 
         a.green {
-            background-color: #7FC35E;
+            background-color: #b7ce3dff;
         }
 
         a.black {
