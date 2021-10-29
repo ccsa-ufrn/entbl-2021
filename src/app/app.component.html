@@ -208,7 +208,16 @@
           <a class="green template" target="_blank" href="assets/ng2/download/artigos/template_word.docx">TEMPLATE EM WORD</a>
           <a class="green template" target="_blank" href="assets/ng2/download/artigos/template_apresentacao_slides.pptx">TEMPLATE DE APRESENTAÇÃO</a>
         </nav>
-        <p>SUBMISSÕES ABERTAS = <a href="https://sigeva.ccsa.ufrn.br/register">(SUBMETA SEU TRABALHO AQUI)</a></p>
+        <h4>SUBMISSÕES ABERTAS</h4>
+        <nav class="main">
+          <a class="green-dark template-small" target="_blank" href="https://sigeva.ccsa.ufrn.br/register">SUBMETA SEU TRABALHO AQUI</a>
+        </nav>
+        <p>Para submeter seu trabalho, siga as normas gerais do evento e o template de cada categoria, além de
+          utilizar somente a ficha de autores para a identificação de autoria. 
+          Cadastre-se no SIGEVA com login e senha e submeta seus arquivos diretamente no sistema do evento.
+          Para submeter seu trabalho à Comissão Científica não é necessário efetuar qualquer pagamento.
+          O pagamento de inscrições (obrigatório para a apresentação em GT, bem como para a publicação do trabalho nos Anais)
+          abrirá em janeiro de 2022, estendendo-se até o primeiro dia do evento.</p>
       </div>
     </div>
   </div>
@@ -233,35 +242,34 @@
   </div>
   </section>
 
+  <section class="thematic-groups">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="s_tgs"></div>
         </div>
       </div>
-    </div>
 
-      <section class="presentation">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-                    <ol>
-                      <li>Política Pública e Desenvolvimento no Turismo</li>
-                      <li>Parcerias para o Turismo em Áreas Protegidas </li>
-                      <li>Turismo com Base Local: arqueologia e preservação patrimonial em comunidades tradicionais</li>
-                      <li>Turismo e Memória </li>
-                      <li>Turismo e Desenvolvimento Rural</li>
-                      <li>Cultura, Religiosidade e Turismo com Base Local: entre o material e o imaterial na busca pela diversidade cultural</li>
-                      <li>Planejamento, Política, Governança e Turismo no espaço urbano</li>
-                      <li>Turismo, Gastronomia e Território </li>
-                      <li>Impactos da Pandemia de Covid-19 no Turismo</li>
-                      <li>Gestão, Empreendedorismo e Inovação em Turismo</li>
-                      <li>Hospitalidade e Experiência Turística</li>
-                    </ol>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="main">
+            <li *ngFor="let i of _gtsleft;let k2 = index;">
+              <ul>
+                <li *ngFor="let j of i.tgs; let k = index;">
+                  <a (click)="openSub('div'+ k +'left'+ k2)" (keypress.enter)="openSub('div'+ k +'left'+ k2)">{{ j.name }}</a>
+                  <div id="div{{ k }}left{{ k2 }}">
+                    <p class="coordinators">{{ j.coordinators }}</p>
+                    <p class="description">{{ j.syllabus }}</p>
                   </div>
-              </div>
-          </div>
-      </section>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <div class="container">
       <div class="row">

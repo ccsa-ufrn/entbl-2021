@@ -989,6 +989,20 @@ footer {
             transition: font-size 0.3s;
         }
 
+        a.template-small {
+            display: block;
+            text-align: center;
+            width: calc(100% / 3);
+            height: 60px;
+            margin: 5px;
+            color: white !important;
+            border-radius: 10px;
+            font-size: 17px;
+            padding-top: 13px;
+            cursor: pointer;
+            transition: font-size 0.3s;
+        }
+
         a:hover {
             font-size: 18px;
             padding-top: 16px;
@@ -1023,6 +1037,10 @@ footer {
 
         a.green {
             background-color: #b7ce3dff;
+        }
+
+        a.green-dark {
+            background-color: #5C7B0C;
         }
 
         a.black {
