@@ -64,8 +64,8 @@ export class AppComponent implements OnInit {
         this.modalMesaRedonda = false;
         this.modalConferencia = false;
         this.modalProgramacao = false;
+        this.modalPrazo = true;
         this.modalUmaNoticiaModal = false;
-        this.modalPrazo = false;
 
         /** REGISTER FORM */
         this._registerForm = this._formBuilder.group({
